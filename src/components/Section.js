@@ -1,15 +1,11 @@
 import React from 'react';
-const hobies = ['bailar', 'programar', 'dibujar'];
+import List from './List'
 const Section = ({name, bio, img}) => (
     <div className=""> 
       <p>{bio}</p>
       <img src={img} alt={name} />
       <h2>Mis hobbies</h2>
-       <ul>
-        {hobies.map((element,index)=>{
-       return <li key={index}>{element}</li>
-   })}
-      </ul>
+      <List />
    </div>
 )
 
