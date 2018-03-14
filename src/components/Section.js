@@ -1,12 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Section extends Component {
- render(){
-  const {name, bio, img} = this.props
-  return (
+const Section = ({name, bio, img}) => (
     <div className=""> 
       <p>{bio}</p>
       <img src={img} alt={name} />
+      <h2>Mis hobbies</h2>
        <ul>
         <li>Bailar</li>
         <li>Programar</li>
@@ -14,7 +12,5 @@ class Section extends Component {
       </ul>
    </div>
 )
- }
-}
 
 export default Section;
