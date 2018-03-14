@@ -4,7 +4,7 @@ class Section extends Component {
  render(){
   const {name, bio, img} = this.props
   return (
-    <div className="music-card"> 
+    <div className=""> 
       <p>{bio}</p>
       <img src={img} alt={name} />
        <ul>
